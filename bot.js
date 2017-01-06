@@ -1,4 +1,4 @@
-var SlackBot = require('slackbots');
+var SlackBot = require('slackbot');
 var Client = require('node-rest-client').Client;
 
 var bot = new SlackBot({
