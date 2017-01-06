@@ -1,0 +1,13 @@
+import json
+import sys
+import os
+from pprint import pprint
+#os.system('rm data.json')
+
+traffic_data = os.system('curl -s -X GET -G -d max=300 -H "Accept: application/json" "https://maps.googleapis.com/maps/api/directions/json?origin=42.849784,-85.678554&destination=42.961383,-85.668951&key=AIzaSyAQxtgA3wE_Kb7kRfY26p--25RkQtDGKTE" >> /dev/null')
+
+with open('data.json') as data_file:
+	data = json.load(data_file)
+
+
+print(str(data["routes"][0]["legs"][0]["duration"]["text"]))
