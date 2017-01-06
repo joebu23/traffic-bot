@@ -5,7 +5,7 @@
 # ----------
 webhook_url="https://hooks.slack.com/services/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"       # Incoming Webhooks integration URL
 upload_token="xoxb-72925659365-BU5y7pFhQJqzAYapZsEpBgEO"      # The user's API authentication token, only used for file uploads
-channel="random"    # Default channel to post messages. '#' is prepended, if it doesn't start with '#' or '@'.
+channel="traffic-bot-testing"    # Default channel to post messages. '#' is prepended, if it doesn't start with '#' or '@'.
 tmp_dir="/tmp"       # Temporary file is created in this directory.
 username="traffic-bot"  # Default username to post messages.
 icon="ghost"         # Default emoji to post messages. Don't wrap it with ':'. See http://www.emoji-cheat-sheet.com; can be a url too.

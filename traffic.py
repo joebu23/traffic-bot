@@ -20,7 +20,7 @@ def coords(str):
 url = "https://maps.googleapis.com/maps/api/directions/json?origin=" + coords(sys.argv[1]) + "&destination=" + coords(sys.argv[2]) + "&key=AIzaSyAQxtgA3wE_Kb7kRfY26p--25RkQtDGKTE"
 
 os.system('rm /home/media/Dev/traffic-bot/data.json')
-traffic_data = os.system('curl -s -X GET -G -d max=300 -H "Accept: application/json" "' + url + '" >> data.json')
+os.system('curl -s -X GET -G -d max=300 -H "Accept: application/json" "' + url + '" >> data.json')
 
 with open('data.json') as data_file:
 	data = json.load(data_file)

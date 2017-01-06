@@ -15,7 +15,7 @@ then
 fi
 
 shift
-channel="#family-stuff"
+channel="#traffic-bot-testing"
 if [[ $channel == "" ]]
 then
         echo "No channel specified"
