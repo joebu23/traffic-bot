@@ -6,7 +6,7 @@
 # https://slackhost.slack.com/
 slackhost="https://roystonfamily.slack.com"
 
-token=x
+token=xoxb-72925659365-BU5y7pFhQJqzAYapZsEpBgEO
 
 if [[ $token == "" ]]
 then
